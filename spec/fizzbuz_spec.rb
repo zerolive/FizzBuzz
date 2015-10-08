@@ -12,7 +12,7 @@ describe "The FizzBuzz" do
 	end
 
 	it "answers Fizz to three" do
-		expect(FizzBuzz.answer(3)).to be("Fizz")
+		expect(FizzBuzz.answer(3)).to eq("Fizz")
 	end
 
 	it "answers four to four" do
@@ -20,7 +20,7 @@ describe "The FizzBuzz" do
 	end
 
 	it "answers Buzz to five" do
-		expect(FizzBuzz.answer(5)).to be("Buzz")
+		expect(FizzBuzz.answer(5)).to eq("Buzz")
 	end
 
 	it "answers Fizz to six" do
@@ -36,11 +36,11 @@ describe "The FizzBuzz" do
 	end
 
 	it "answers Fizz to nine" do
-		expect(FizzBuzz.answer(9)).to be("Fizz")
+		expect(FizzBuzz.answer(9)).to eq("Fizz")
 	end
 
 	it "answers Buzz to ten" do
-		expect(FizzBuzz.answer(10)).to be("Buzz")
+		expect(FizzBuzz.answer(10)).to eq("Buzz")
 	end
 
 	it "answers eleven to eleven" do
@@ -48,7 +48,7 @@ describe "The FizzBuzz" do
 	end
 
 	it "answers Fizz to twelve" do
-		expect(FizzBuzz.answer(12)).to be("Fizz")
+		expect(FizzBuzz.answer(12)).to eq("Fizz")
 	end
 
 	it "answers thirten to thirten" do
@@ -60,7 +60,7 @@ describe "The FizzBuzz" do
 	end
 
 	it "answers FizzBuzz to fiveteen" do
-		expect(FizzBuzz.answer(15)).to be("FizzBuzz")
+		expect(FizzBuzz.answer(15)).to eq("FizzBuzz")
 	end
 
 end
