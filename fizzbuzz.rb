@@ -10,7 +10,7 @@ class FizzBuzz
   private
 
   def self.is_fizzbuzz? number
-  	number == 15
+  	number % 3 == 0 && number % 5 == 0
   end
 
   def self.is_fizz? number
