@@ -9,10 +9,6 @@ class FizzBuzz
 
   private
 
-  def self.is_fizzbuzz? number
-  	number % 3 == 0 && number % 5 == 0
-  end
-
   def self.is_fizz? number
   	number % 3 == 0
   end
@@ -20,4 +16,9 @@ class FizzBuzz
   def self.is_buzz? number
   	number % 5 == 0
   end
+
+  def self.is_fizzbuzz? number
+    is_buzz?(number) && is_fizz?(number)
+  end
+
 end
