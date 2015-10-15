@@ -2,25 +2,34 @@ class FizzBuzz
 
   class << self
 
+    FIZZ_NUMBER = 3
+    BUZZ_NUMBER = 5
+    FIZZ = "Fizz"
+    BUZZ = "Buzz"
+
     def answer number
-  	  return "FizzBuzz" if is_fizzbuzz?(number)
-	    return "Fizz" if is_fizz?(number)
-	    return "Buzz" if is_buzz?(number)
-  	  return number
+      result = answerfizzbuzz(number)
+      if result.empty?
+        result = number
+      end
+  	  return result
     end
 
     private
 
+    def answerfizzbuzz number
+      result = ""
+      result += FIZZ if is_fizz?(number)
+      result += BUZZ if is_buzz?(number)
+      return result
+    end
+
     def is_fizz? number
-  	  number % 3 == 0
+  	  (number % FIZZ_NUMBER).zero?
     end
 
     def is_buzz? number
-  	  number % 5 == 0
-    end
-
-    def is_fizzbuzz? number
-      is_buzz?(number) && is_fizz?(number)
+  	  (number % BUZZ_NUMBER).zero?
     end
 
   end
